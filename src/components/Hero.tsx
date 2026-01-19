@@ -1,5 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import pivinLogo from "@/assets/pivin-logo.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -20,9 +21,11 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 pt-24 pb-32 text-center">
         <div className="max-w-3xl mx-auto animate-fade-up">
-          <span className="inline-block px-4 py-2 mb-6 text-sm font-semibold text-primary bg-primary/10 rounded-full">
-            Ihr Partner für Außenanlagen
-          </span>
+          <img 
+            src={pivinLogo} 
+            alt="Pivin Garten-Landschaftspflege" 
+            className="h-24 md:h-32 w-auto mx-auto mb-8"
+          />
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6 leading-tight">
             Professionelle Garten- &{" "}
