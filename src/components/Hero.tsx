@@ -1,6 +1,5 @@
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-garden.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -16,18 +15,8 @@ const Hero = () => {
   return (
     <section
       id="start"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/15 via-accent/10 to-secondary"
     >
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Wunderschöner gepflegter Garten"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background/80" />
-      </div>
-
       {/* Content */}
       <div className="container relative z-10 pt-24 pb-32 text-center">
         <div className="max-w-3xl mx-auto animate-fade-up">
