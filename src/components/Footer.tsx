@@ -1,0 +1,198 @@
+import { useState } from "react";
+import { Leaf } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+
+type ModalType = "impressum" | "datenschutz" | null;
+
+const Footer = () => {
+  const [openModal, setOpenModal] = useState<ModalType>(null);
+
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-foreground text-primary-foreground py-12">
+      <div className="container">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          {/* Logo & About */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+                <Leaf className="w-6 h-6 text-primary-foreground" />
+              </div>
+              <span className="font-heading font-bold text-xl">
+                Grüne<span className="text-primary">Oase</span>
+              </span>
+            </div>
+            <p className="text-primary-foreground/70 text-sm leading-relaxed">
+              Ihr zuverlässiger Partner für professionelle Garten- und Landschaftspflege 
+              in der Region.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-heading font-bold mb-4">Schnellzugriff</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="#leistungen" className="text-primary-foreground/70 hover:text-primary transition-colors text-sm">
+                  Leistungen
+                </a>
+              </li>
+              <li>
+                <a href="#ueber-uns" className="text-primary-foreground/70 hover:text-primary transition-colors text-sm">
+                  Über uns
+                </a>
+              </li>
+              <li>
+                <a href="#galerie" className="text-primary-foreground/70 hover:text-primary transition-colors text-sm">
+                  Galerie
+                </a>
+              </li>
+              <li>
+                <a href="#kontakt" className="text-primary-foreground/70 hover:text-primary transition-colors text-sm">
+                  Kontakt
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Legal Links */}
+          <div>
+            <h4 className="font-heading font-bold mb-4">Rechtliches</h4>
+            <ul className="space-y-2">
+              <li>
+                <button
+                  onClick={() => setOpenModal("impressum")}
+                  className="text-primary-foreground/70 hover:text-primary transition-colors text-sm"
+                >
+                  Impressum
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => setOpenModal("datenschutz")}
+                  className="text-primary-foreground/70 hover:text-primary transition-colors text-sm"
+                >
+                  Datenschutzerklärung
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="pt-8 border-t border-primary-foreground/10 text-center">
+          <p className="text-primary-foreground/60 text-sm">
+            © {currentYear} GrüneOase Garten- & Landschaftspflege. Alle Rechte vorbehalten.
+          </p>
+        </div>
+      </div>
+
+      {/* Impressum Modal */}
+      <Dialog open={openModal === "impressum"} onOpenChange={() => setOpenModal(null)}>
+        <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-heading">Impressum</DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4 text-muted-foreground">
+            <div>
+              <h4 className="font-bold text-foreground mb-2">Angaben gemäß § 5 TMG</h4>
+              <p>
+                GrüneOase Garten- & Landschaftspflege<br />
+                Max Mustermann<br />
+                Musterstraße 123<br />
+                12345 Musterstadt
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-foreground mb-2">Kontakt</h4>
+              <p>
+                Telefon: +49 123 456 789 00<br />
+                E-Mail: info@gruene-oase.de
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-foreground mb-2">Umsatzsteuer-ID</h4>
+              <p>
+                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
+                DE123456789
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-foreground mb-2">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h4>
+              <p>
+                Max Mustermann<br />
+                Musterstraße 123<br />
+                12345 Musterstadt
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-foreground mb-2">Streitschlichtung</h4>
+              <p>
+                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+                https://ec.europa.eu/consumers/odr/. Wir sind nicht bereit oder verpflichtet, an 
+                Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+              </p>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Datenschutz Modal */}
+      <Dialog open={openModal === "datenschutz"} onOpenChange={() => setOpenModal(null)}>
+        <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-heading">Datenschutzerklärung</DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4 text-muted-foreground">
+            <div>
+              <h4 className="font-bold text-foreground mb-2">1. Datenschutz auf einen Blick</h4>
+              <p>
+                <strong>Allgemeine Hinweise:</strong> Die folgenden Hinweise geben einen einfachen Überblick 
+                darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-foreground mb-2">2. Datenerfassung auf dieser Website</h4>
+              <p>
+                <strong>Wer ist verantwortlich für die Datenerfassung?</strong><br />
+                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. 
+                Dessen Kontaktdaten können Sie dem Impressum entnehmen.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-foreground mb-2">3. Kontaktformular</h4>
+              <p>
+                Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem 
+                Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung 
+                der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-foreground mb-2">4. Ihre Rechte</h4>
+              <p>
+                Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und 
+                Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem 
+                ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-foreground mb-2">5. Kontakt</h4>
+              <p>
+                Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten 
+                wenden Sie sich bitte an: info@gruene-oase.de
+              </p>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+    </footer>
+  );
+};
+
+export default Footer;
