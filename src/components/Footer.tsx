@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Leaf } from "lucide-react";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import pivinLogo from "@/assets/pivin-logo.png";
 
 type ModalType = "impressum" | "datenschutz" | null;
 
@@ -21,16 +21,15 @@ const Footer = () => {
           {/* Logo & About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <span className="font-heading font-bold text-xl">
-                Grüne<span className="text-primary">Oase</span>
-              </span>
+              <img 
+                src={pivinLogo} 
+                alt="Pivin Garten-Landschaftspflege" 
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Ihr zuverlässiger Partner für professionelle Garten- und Landschaftspflege 
-              in der Region.
+              in der Region. Grün gedacht, sauber gemacht!
             </p>
           </div>
 
@@ -88,7 +87,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="pt-8 border-t border-primary-foreground/10 text-center">
           <p className="text-primary-foreground/60 text-sm">
-            © {currentYear} GrüneOase Garten- & Landschaftspflege. Alle Rechte vorbehalten.
+            © {currentYear} Pivin Garten-Landschaftspflege. Alle Rechte vorbehalten.
           </p>
         </div>
       </div>
@@ -103,17 +102,17 @@ const Footer = () => {
             <div>
               <h4 className="font-bold text-foreground mb-2">Angaben gemäß § 5 TMG</h4>
               <p>
-                GrüneOase Garten- & Landschaftspflege<br />
-                Max Mustermann<br />
-                Musterstraße 123<br />
-                12345 Musterstadt
+                Pivin Garten-Landschaftspflege<br />
+                [Ihr Name]<br />
+                [Ihre Straße]<br />
+                [PLZ Ort]
               </p>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-2">Kontakt</h4>
               <p>
-                Telefon: +49 123 456 789 00<br />
-                E-Mail: info@gruene-oase.de
+                Telefon: [Ihre Telefonnummer]<br />
+                E-Mail: info@pivin.de
               </p>
             </div>
             <div>
@@ -185,7 +184,7 @@ const Footer = () => {
               <h4 className="font-bold text-foreground mb-2">5. Kontakt</h4>
               <p>
                 Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten 
-                wenden Sie sich bitte an: info@gruene-oase.de
+                wenden Sie sich bitte an: info@pivin.de
               </p>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import pivinLogo from "@/assets/pivin-logo.png";
 
 const navItems = [
   { label: "Start", href: "#start" },
@@ -44,14 +45,13 @@ const Header = () => {
         <a
           href="#start"
           onClick={(e) => handleNavClick(e, "#start")}
-          className="flex items-center gap-2 group"
+          className="flex items-center group"
         >
-          <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Leaf className="w-6 h-6 text-primary-foreground" />
-          </div>
-          <span className="font-heading font-bold text-xl text-foreground">
-            Grüne<span className="text-primary">Oase</span>
-          </span>
+          <img 
+            src={pivinLogo} 
+            alt="Pivin Garten-Landschaftspflege" 
+            className="h-12 md:h-14 w-auto group-hover:scale-105 transition-transform"
+          />
         </a>
 
         {/* Desktop Navigation */}
