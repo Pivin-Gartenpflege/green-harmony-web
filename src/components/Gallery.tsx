@@ -32,7 +32,7 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <section id="galerie" className="py-20 bg-section-light">
+    <section id="galerie" className="relative py-20 pb-32 bg-section-light">
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -84,8 +84,8 @@ const Gallery = () => {
         </DialogContent>
       </Dialog>
 
-      {/* Wave Divider */}
-      <div className="relative mt-20">
+      {/* Wave Divider Bottom */}
+      <div className="absolute bottom-0 left-0 right-0">
         <svg
           viewBox="0 0 1440 120"
           className="w-full h-auto"
@@ -93,7 +93,7 @@ const Gallery = () => {
         >
           <path
             fill="hsl(0, 0%, 100%)"
-            d="M0,96L48,85.3C96,75,192,53,288,48C384,43,480,53,576,64C672,75,768,85,864,80C960,75,1056,53,1152,48C1248,43,1344,53,1392,58.7L1440,64L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"
+            d="M0,48L80,53.3C160,59,320,69,480,74.7C640,80,800,80,960,69.3C1120,59,1280,37,1360,26.7L1440,16L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
           />
         </svg>
       </div>

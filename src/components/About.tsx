@@ -11,7 +11,7 @@ const benefits = [
 
 const About = () => {
   return (
-    <section id="ueber-uns" className="py-20 bg-background">
+    <section id="ueber-uns" className="relative py-20 pb-32 bg-background">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -54,6 +54,20 @@ const About = () => {
             </ul>
           </div>
         </div>
+      </div>
+
+      {/* Wave Divider Bottom */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg
+          viewBox="0 0 1440 120"
+          className="w-full h-auto"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="hsl(90, 25%, 97%)"
+            d="M0,32L80,42.7C160,53,320,75,480,80C640,85,800,75,960,64C1120,53,1280,43,1360,37.3L1440,32L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+          />
+        </svg>
       </div>
     </section>
   );

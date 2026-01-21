@@ -43,7 +43,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="leistungen" className="py-20 bg-section-light">
+    <section id="leistungen" className="relative py-20 bg-section-light">
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -82,8 +82,8 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Wave Divider */}
-      <div className="relative mt-20">
+      {/* Wave Divider Bottom */}
+      <div className="absolute bottom-0 left-0 right-0">
         <svg
           viewBox="0 0 1440 120"
           className="w-full h-auto"
@@ -91,7 +91,7 @@ const Services = () => {
         >
           <path
             fill="hsl(0, 0%, 100%)"
-            d="M0,32L60,42.7C120,53,240,75,360,80C480,85,600,75,720,64C840,53,960,43,1080,42.7C1200,43,1320,53,1380,58.7L1440,64L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"
+            d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
           />
         </svg>
       </div>

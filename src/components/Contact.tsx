@@ -69,7 +69,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="kontakt" className="py-20 bg-background">
+    <section id="kontakt" className="relative py-20 pb-32 bg-background">
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -229,6 +229,20 @@ const Contact = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Wave Divider Bottom */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg
+          viewBox="0 0 1440 120"
+          className="w-full h-auto"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="hsl(90, 40%, 25%)"
+            d="M0,80L80,74.7C160,69,320,59,480,53.3C640,48,800,48,960,58.7C1120,69,1280,91,1360,101.3L1440,112L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+          />
+        </svg>
       </div>
     </section>
   );
