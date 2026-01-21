@@ -81,7 +81,7 @@ const Contact = () => {
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Haben Sie Fragen oder wünschen ein Angebot? 
-            Kontaktieren Sie uns – wir beraten Sie gerne!
+            Kontaktieren Sie mich – ich berate Sie gerne!
           </p>
         </div>
 
@@ -173,7 +173,7 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-xl font-heading font-bold text-foreground mb-6">
-                So erreichen Sie uns
+                So erreichen Sie mich
               </h3>
               <div className="space-y-6">
                 <a
@@ -220,8 +220,8 @@ const Contact = () => {
                 Kostenlose Erstberatung
               </h4>
               <p className="text-muted-foreground">
-                Wir kommen gerne zu Ihnen für eine unverbindliche Beratung vor Ort. 
-                Rufen Sie uns an oder schreiben Sie uns – wir melden uns zeitnah!
+                Ich komme gerne zu Ihnen für eine unverbindliche Beratung vor Ort. 
+                Rufen Sie mich an oder schreiben Sie mir – ich melde mich zeitnah!
               </p>
             </div>
           </div>

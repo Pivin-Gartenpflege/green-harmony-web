@@ -2,11 +2,11 @@ import { CheckCircle } from "lucide-react";
 
 const benefits = [
   "Über 10 Jahre Erfahrung",
-  "Qualifiziertes Fachpersonal",
+  "Persönlicher Ansprechpartner",
   "Termingerechte Ausführung",
   "Faire & transparente Preise",
   "Kostenlose Erstberatung",
-  "Regionaler Ansprechpartner",
+  "Direkt aus der Region",
 ];
 
 const About = () => {
@@ -24,17 +24,17 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Wir sind ein zuverlässiger Fachbetrieb für Garten- und Landschaftspflege 
-                und betreuen private sowie gewerbliche Außenanlagen in der Region.
+                Ich bin ein zuverlässiger Fachbetrieb für Garten- und Landschaftspflege 
+                und betreue private sowie gewerbliche Außenanlagen in der Region.
               </p>
               <p>
                 <strong className="text-foreground">Qualität, Pünktlichkeit und saubere Arbeit</strong> stehen 
-                bei uns an erster Stelle. Unser erfahrenes Team sorgt dafür, dass Ihr Garten 
+                bei mir an erster Stelle. Als Ihr persönlicher Ansprechpartner sorge ich dafür, dass Ihr Garten 
                 in den besten Händen ist – zu jeder Jahreszeit.
               </p>
               <p>
-                Ob regelmäßige Pflege oder einmalige Projekte: Wir beraten Sie gerne 
-                persönlich und erstellen Ihnen ein unverbindliches Angebot.
+                Ob regelmäßige Pflege oder einmalige Projekte: Ich berate Sie gerne 
+                persönlich und erstelle Ihnen ein unverbindliches Angebot.
               </p>
             </div>
           </div>

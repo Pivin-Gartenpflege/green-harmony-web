@@ -37,7 +37,7 @@ const services = [
   {
     icon: Sun,
     title: "Saisonarbeiten",
-    description: "Frühjahrsputz, Herbstlaub, Winterdienst – wir sind das ganze Jahr für Sie da.",
+    description: "Frühjahrsputz, Herbstlaub, Winterdienst – ich bin das ganze Jahr für Sie da.",
   },
 ];
 
@@ -48,14 +48,14 @@ const Services = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 mb-4 text-sm font-semibold text-primary bg-primary/10 rounded-full">
-            Was wir bieten
+            Was ich biete
           </span>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-            Unsere Leistungen
+            Meine Leistungen
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Von der regelmäßigen Gartenpflege bis zur kompletten Neugestaltung – 
-            wir bieten Ihnen alle Leistungen rund um Ihren Garten.
+            ich biete Ihnen alle Leistungen rund um Ihren Garten.
           </p>
         </div>
 

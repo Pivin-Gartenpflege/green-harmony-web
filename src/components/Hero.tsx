@@ -47,7 +47,7 @@ const Hero = () => {
               onClick={scrollToServices}
               className="text-lg px-8 py-6"
             >
-              Unsere Leistungen
+              Meine Leistungen
             </Button>
           </div>
         </div>
