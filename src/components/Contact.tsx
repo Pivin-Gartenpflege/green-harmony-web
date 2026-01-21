@@ -26,16 +26,46 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "b418f39b-a24c-49e6-9fe9-8df6778620cb",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          subject: "Neue Anfrage von der Website",
+        }),
+      });
 
-    toast({
-      title: "Anfrage gesendet!",
-      description: "Vielen Dank für Ihre Nachricht. Wir melden uns schnellstmöglich bei Ihnen.",
-    });
+      const result = await response.json();
 
-    setFormData({ name: "", email: "", phone: "", message: "" });
-    setIsSubmitting(false);
+      if (result.success) {
+        toast({
+          title: "Anfrage gesendet!",
+          description: "Vielen Dank für Ihre Nachricht. Wir melden uns schnellstmöglich bei Ihnen.",
+        });
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        toast({
+          title: "Fehler",
+          description: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Fehler",
+        description: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

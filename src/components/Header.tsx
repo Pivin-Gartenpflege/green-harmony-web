@@ -8,7 +8,6 @@ const navItems = [
   { label: "Leistungen", href: "#leistungen" },
   { label: "Über uns", href: "#ueber-uns" },
   { label: "Galerie", href: "#galerie" },
-  { label: "Kontakt", href: "#kontakt" },
 ];
 
 const Header = () => {
