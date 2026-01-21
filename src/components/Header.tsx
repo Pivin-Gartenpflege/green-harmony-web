@@ -6,7 +6,7 @@ import pivinLogo from "@/assets/pivin-logo.png";
 const navItems = [
   { label: "Start", href: "#start" },
   { label: "Leistungen", href: "#leistungen" },
-  { label: "Über uns", href: "#ueber-uns" },
+  { label: "Über mich", href: "#ueber-uns" },
 ];
 
 const Header = () => {
