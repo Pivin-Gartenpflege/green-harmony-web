@@ -69,7 +69,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="kontakt" className="relative py-20 pb-32 bg-background">
+    <section id="kontakt" className="py-20 bg-background">
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -177,7 +177,7 @@ const Contact = () => {
               </h3>
               <div className="space-y-6">
                 <a
-                  href="tel:+4912345678900"
+                  href="tel:+49016093768260"
                   className="flex items-start gap-4 group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors">
@@ -185,12 +185,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Telefon</p>
-                    <p className="text-muted-foreground">+49 123 456 789 00</p>
+                    <p className="text-muted-foreground">0160 93768260</p>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:info@gruene-oase.de"
+                  href="mailto:gartenpflege@pivin.de"
                   className="flex items-start gap-4 group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors">
@@ -198,7 +198,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">E-Mail</p>
-                    <p className="text-muted-foreground">info@gruene-oase.de</p>
+                    <p className="text-muted-foreground">gartenpflege@pivin.de</p>
                   </div>
                 </a>
 
@@ -208,10 +208,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Einsatzgebiet</p>
-                    <p className="text-muted-foreground">
-                      Musterstadt und Umgebung<br />
-                      (ca. 30 km Radius)
-                    </p>
+                    <p className="text-muted-foreground">Vulkaneifel</p>
                   </div>
                 </div>
               </div>
@@ -231,19 +228,6 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Wave Divider Bottom */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg
-          viewBox="0 0 1440 120"
-          className="w-full h-auto"
-          preserveAspectRatio="none"
-        >
-          <path
-            fill="hsl(90, 40%, 25%)"
-            d="M0,80L80,74.7C160,69,320,59,480,53.3C640,48,800,48,960,58.7C1120,69,1280,91,1360,101.3L1440,112L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
-          />
-        </svg>
-      </div>
     </section>
   );
 };
