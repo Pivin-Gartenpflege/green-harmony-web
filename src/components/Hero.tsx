@@ -34,7 +34,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-medium">
-            Zuverlässig · Sauber · Regional
+            Zuverlässig · Sauber · Nachhaltig · Regional
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

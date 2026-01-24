@@ -1,10 +1,10 @@
 import {
   Scissors,
   TreeDeciduous,
-  Flower2,
-  Shovel,
   Leaf,
-  Sun,
+  Apple,
+  Sprout,
+  Leaf as LeafIcon,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -17,27 +17,27 @@ const services = [
   {
     icon: TreeDeciduous,
     title: "Landschaftspflege",
-    description: "Professionelle Betreuung von Grünanlagen, Parks und gewerblichen Außenflächen.",
+    description: "Professionelle Betreuung von Grünanlagen und gewerblichen Außenflächen.",
+  },
+  {
+    icon: Apple,
+    title: "Obstbaumschnitt",
+    description: "Fachgerechter Obstbaumschnitt für alle Arten und Alter.",
   },
   {
     icon: Leaf,
-    title: "Baum- & Strauchschnitt",
+    title: "Baum- & Strauchpflege",
     description: "Fachgerechter Rückschnitt, Formschnitt und Pflege Ihrer Gehölze.",
   },
   {
-    icon: Flower2,
-    title: "Neuanlagen & Umgestaltungen",
-    description: "Planung und Umsetzung Ihrer Traumgärten – von der Idee bis zur Fertigstellung.",
+    icon: Sprout,
+    title: "Neupflanzung",
+    description: "Von zarten Gewächsen bis zu tragenden Bäumen.",
   },
   {
-    icon: Shovel,
-    title: "Pflaster- & Terrassenarbeiten",
-    description: "Wege, Terrassen und Einfahrten – professionell verlegt und langlebig.",
-  },
-  {
-    icon: Sun,
-    title: "Saisonarbeiten",
-    description: "Frühjahrsputz, Herbstlaub, Winterdienst – ich bin das ganze Jahr für Sie da.",
+    icon: LeafIcon,
+    title: "Laubarbeiten",
+    description: "Gründliche Laubentfernung inkl. Entsorgung.",
   },
 ];
 
@@ -54,8 +54,7 @@ const Services = () => {
             Meine Leistungen
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Von der regelmäßigen Gartenpflege bis zur kompletten Neugestaltung – 
-            ich biete Ihnen alle Leistungen rund um Ihren Garten.
+            Von der regelmäßigen Gartenpflege über Neupflanzungen bis hin zu kleineren Gartenumgestaltungen.
           </p>
         </div>
 
