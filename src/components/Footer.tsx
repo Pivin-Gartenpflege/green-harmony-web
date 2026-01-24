@@ -98,38 +98,37 @@ const Footer = () => {
               <h4 className="font-bold text-foreground mb-2">Angaben gemäß § 5 TMG</h4>
               <p>
                 Pivin Garten-Landschaftspflege<br />
-                [Ihr Name]<br />
-                [Ihre Straße]<br />
-                [PLZ Ort]
+                Kevin Mierlita<br />
+                Antoniusweg 9<br />
+                54576 Hillesheim
               </p>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-2">Kontakt</h4>
               <p>
-                Telefon: [Ihre Telefonnummer]<br />
-                E-Mail: info@pivin.de
+                Telefon: 0160/93768260<br />
+                E-Mail: gartenpflege@pivin.de
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-2">Umsatzsteuer-ID</h4>
+              <h4 className="font-bold text-foreground mb-2">Umsatzsteuer</h4>
               <p>
-                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-                DE123456789
+                Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.
               </p>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-2">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h4>
               <p>
-                Max Mustermann<br />
-                Musterstraße 123<br />
-                12345 Musterstadt
+                Kevin Mierlita<br />
+                Antoniusweg 9<br />
+                54576 Hillesheim
               </p>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-2">Streitschlichtung</h4>
               <p>
                 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
-                https://ec.europa.eu/consumers/odr/. Wir sind nicht bereit oder verpflichtet, an 
+                https://ec.europa.eu/consumers/odr/. Ich bin nicht bereit oder verpflichtet, an 
                 Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
               </p>
             </div>
