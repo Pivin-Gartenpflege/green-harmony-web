@@ -27,10 +27,12 @@ const Hero = () => {
             className="h-24 md:h-32 w-auto mx-auto mb-8"
           />
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6 leading-tight">
-            Professionelle Garten- &{" "}
-            <span className="text-gradient">Landschaftspflege</span>{" "}
-            aus einer Hand
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
+            <span style={{ color: '#4A5435' }}>Professionelle</span>
+            <br />
+            <span style={{ color: '#ABC72B' }}>Garten- & Landschaftspflege</span>
+            <br />
+            <span style={{ color: '#4A5435' }}>aus einer Hand</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-medium">
