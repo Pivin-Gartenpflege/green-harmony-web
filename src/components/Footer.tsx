@@ -148,10 +148,10 @@ const Footer = () => {
               <p>
                 Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br /><br />
                 Kevin Mierlita<br />
-                Pivin Garten- & Landschaftspflege<br />
+                Pivin Garten- Landschaftspflege<br />
                 Antoniusweg 9<br />
                 54576 Hillesheim<br /><br />
-                Telefon: 016093768260<br />
+                Telefon: 0160/93768260<br />
                 E-Mail: gartenpflege@pivin.de
               </p>
             </div>
@@ -161,78 +161,90 @@ const Footer = () => {
                 Der Schutz Ihrer persönlichen Daten ist mir ein besonderes Anliegen.<br /><br />
                 Personenbezogene Daten werden auf dieser Website ausschließlich im Rahmen der gesetzlichen 
                 Bestimmungen der Datenschutz-Grundverordnung (DSGVO) verarbeitet.<br /><br />
-                Diese Datenschutzerklärung informiert darüber, welche Daten erfasst werden und zu welchem Zweck dies geschieht.
+                Diese Datenschutzerklärung erläutert Art, Umfang und Zweck der Verarbeitung personenbezogener Daten.
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-2">3. Hosting</h4>
+              <h4 className="font-bold text-foreground mb-2">3. Domainregistrierung</h4>
               <p>
-                Diese Website wird bei folgendem Anbieter gehostet:<br /><br />
+                Die Domain dieser Website ist registriert bei:<br /><br />
                 STRATO AG<br />
                 Otto-Ostrowski-Straße 7<br />
                 10249 Berlin<br />
                 Deutschland<br /><br />
-                Beim Besuch der Website erhebt STRATO automatisch Informationen in sogenannten Server-Logfiles. 
-                Diese Daten können unter anderem umfassen:
-              </p>
-              <ul className="list-disc list-inside mt-2 space-y-1">
-                <li>IP-Adresse</li>
-                <li>Datum und Uhrzeit der Anfrage</li>
-                <li>Browsertyp und Browserversion</li>
-                <li>verwendetes Betriebssystem</li>
-                <li>Referrer-URL</li>
-              </ul>
-              <p className="mt-2">
-                Die Erhebung dieser Daten erfolgt zur Sicherstellung eines störungsfreien Betriebs der Website 
-                sowie zur Verbesserung des Angebots.<br />
-                Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO.
+                STRATO verarbeitet im Rahmen der Domainverwaltung technische Daten, insbesondere zur 
+                Gewährleistung der Erreichbarkeit der Website.
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-2">4. Kontaktformular</h4>
+              <h4 className="font-bold text-foreground mb-2">4. Hosting über GitHub Pages</h4>
+              <p>
+                Diese Website wird über den Dienst „GitHub Pages" bereitgestellt.<br /><br />
+                Anbieter:<br />
+                GitHub Inc.<br />
+                88 Colin P. Kelly Jr. Street<br />
+                San Francisco, CA 94107<br />
+                USA<br /><br />
+                Beim Aufruf der Website werden durch GitHub automatisch folgende Daten erhoben und in 
+                sogenannten Server-Logfiles gespeichert:
+              </p>
+              <ul className="list-disc list-inside mt-2 space-y-1">
+                <li>IP-Adresse</li>
+                <li>Datum und Uhrzeit des Zugriffs</li>
+                <li>aufgerufene Seite</li>
+                <li>Browsertyp und -version</li>
+                <li>verwendetes Betriebssystem</li>
+              </ul>
+              <p className="mt-2">
+                Die Verarbeitung dieser Daten erfolgt zur technischen Bereitstellung und Sicherheit der Website.<br /><br />
+                GitHub kann Daten in die USA übertragen. GitHub stützt sich dabei auf die Standardvertragsklauseln 
+                der EU-Kommission gemäß Art. 46 DSGVO.<br /><br />
+                Weitere Informationen zum Datenschutz bei GitHub finden Sie in der Datenschutzerklärung von GitHub.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-foreground mb-2">5. Kontaktformular</h4>
               <p>
                 Wenn Sie mir per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular 
-                inklusive der von Ihnen dort angegebenen Kontaktdaten gespeichert, um Ihre Anfrage zu bearbeiten 
-                und für den Fall von Anschlussfragen.<br /><br />
-                Folgende Daten können erhoben werden:
+                inklusive der angegebenen Kontaktdaten verarbeitet, um Ihre Anfrage zu bearbeiten.<br /><br />
+                Erhobene Daten können sein:
               </p>
               <ul className="list-disc list-inside mt-2 space-y-1">
                 <li>Name</li>
                 <li>E-Mail-Adresse</li>
-                <li>Telefonnummer (falls angegeben)</li>
-                <li>Nachrichtentext</li>
+                <li>Telefonnummer (optional)</li>
+                <li>Nachricht</li>
               </ul>
               <p className="mt-2">
-                Diese Daten werden nicht ohne Ihre Einwilligung weitergegeben.<br /><br />
-                Die Verarbeitung der Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen).<br /><br />
-                Die Daten werden nach abgeschlossener Bearbeitung Ihrer Anfrage gelöscht, sofern keine gesetzlichen 
+                Die Daten werden nicht ohne Ihre Einwilligung weitergegeben.<br /><br />
+                Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO.<br /><br />
+                Die Daten werden nach abschließender Bearbeitung gelöscht, sofern keine gesetzlichen 
                 Aufbewahrungspflichten bestehen.
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-2">5. Cookies</h4>
+              <h4 className="font-bold text-foreground mb-2">6. Cookies</h4>
               <p>Diese Website verwendet keine Cookies.</p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-2">6. Ihre Rechte</h4>
-              <p>Sie haben jederzeit das Recht:</p>
+              <h4 className="font-bold text-foreground mb-2">7. Ihre Rechte</h4>
+              <p>Sie haben jederzeit das Recht auf:</p>
               <ul className="list-disc list-inside mt-2 space-y-1">
-                <li>Auskunft über Ihre gespeicherten personenbezogenen Daten zu erhalten</li>
-                <li>Berichtigung unrichtiger Daten zu verlangen</li>
-                <li>Löschung Ihrer Daten zu verlangen</li>
-                <li>Einschränkung der Verarbeitung zu verlangen</li>
-                <li>der Verarbeitung zu widersprechen</li>
-                <li>Ihre Einwilligung jederzeit zu widerrufen</li>
+                <li>Auskunft über Ihre gespeicherten Daten</li>
+                <li>Berichtigung unrichtiger Daten</li>
+                <li>Löschung Ihrer personenbezogenen Daten</li>
+                <li>Einschränkung der Verarbeitung</li>
+                <li>Widerspruch gegen die Verarbeitung</li>
+                <li>Datenübertragbarkeit</li>
               </ul>
               <p className="mt-2">
-                Zudem haben Sie das Recht, sich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren.
+                Außerdem steht Ihnen ein Beschwerderecht bei der zuständigen Datenschutzaufsichtsbehörde zu.
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-2">7. SSL- bzw. TLS-Verschlüsselung</h4>
+              <h4 className="font-bold text-foreground mb-2">8. SSL- bzw. TLS-Verschlüsselung</h4>
               <p>
-                Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte 
-                eine SSL- bzw. TLS-Verschlüsselung.<br /><br />
+                Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung.<br /><br />
                 Eine verschlüsselte Verbindung erkennen Sie an „https://" in der Adresszeile Ihres Browsers.
               </p>
             </div>
