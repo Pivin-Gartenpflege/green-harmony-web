@@ -22,7 +22,7 @@ const services = [
   {
     icon: Apple,
     title: "Obstbaumschnitt",
-    description: "Fachgerechter Obstbaumschnitt für alle Arten und Alter.",
+    description: "Fachgerechter Obstbaumschnitt für alle Baumarten und Altersstufen.",
   },
   {
     icon: Leaf,
