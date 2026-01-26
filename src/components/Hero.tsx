@@ -56,7 +56,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-24 left-0 right-0 z-10 flex justify-center">
+      <div className="absolute bottom-[76px] md:bottom-24 left-0 right-0 z-10 flex justify-center">
         <button
           onClick={scrollToServices}
           className="animate-float text-muted-foreground hover:text-primary transition-colors"
