@@ -30,7 +30,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
             <span style={{ color: '#4A5435' }}>Professionelle</span>
             <br />
-            <span style={{ color: '#ABC72B', whiteSpace: 'nowrap' }}>Garten- & Landschaftspflege</span>
+            <span className="md:whitespace-nowrap" style={{ color: '#ABC72B' }}>Garten- & Landschaftspflege</span>
             <br />
             <span style={{ color: '#4A5435' }}>aus einer Hand</span>
           </h1>
