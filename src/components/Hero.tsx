@@ -53,16 +53,16 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-
-        {/* Scroll Indicator */}
-        <button
-          onClick={scrollToServices}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float text-muted-foreground hover:text-primary transition-colors"
-          aria-label="Nach unten scrollen"
-        >
-          <ArrowDown className="w-8 h-8" />
-        </button>
       </div>
+
+      {/* Scroll Indicator */}
+      <button
+        onClick={scrollToServices}
+        className="absolute bottom-24 left-1/2 -translate-x-1/2 z-10 animate-float text-muted-foreground hover:text-primary transition-colors"
+        aria-label="Nach unten scrollen"
+      >
+        <ArrowDown className="w-8 h-8" />
+      </button>
 
       {/* Wave Divider */}
       <div className="absolute bottom-0 left-0 right-0">
