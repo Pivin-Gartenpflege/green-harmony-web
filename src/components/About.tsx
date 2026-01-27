@@ -11,7 +11,7 @@ const benefits = [
 
 const About = () => {
   return (
-    <section id="ueber-uns" className="relative py-20 pb-32 bg-background">
+    <section id="ueber-uns" className="relative pt-12 md:pt-20 pb-20 md:pb-32 bg-background">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}

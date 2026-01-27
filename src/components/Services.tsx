@@ -43,7 +43,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="leistungen" className="relative pt-20 pb-32 bg-section-light">
+    <section id="leistungen" className="relative pt-20 pb-20 md:pb-32 bg-section-light">
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-16">
