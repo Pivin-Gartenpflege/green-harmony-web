@@ -125,11 +125,10 @@ const Footer = () => {
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-2">Streitschlichtung</h4>
+              <h4 className="font-bold text-foreground mb-2">Verbraucherstreitbeilegung/Universalschlichtungsstelle</h4>
               <p>
-                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
-                https://ec.europa.eu/consumers/odr/. Ich bin nicht bereit oder verpflichtet, an 
-                Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer 
+                Verbraucherschlichtungsstelle teilzunehmen.
               </p>
             </div>
           </div>
