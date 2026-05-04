@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -11,6 +11,12 @@ type ModalType = "impressum" | "datenschutz" | null;
 
 const Footer = () => {
   const [openModal, setOpenModal] = useState<ModalType>(null);
+
+  useEffect(() => {
+    const handler = () => setOpenModal("datenschutz");
+    window.addEventListener("open-datenschutz", handler);
+    return () => window.removeEventListener("open-datenschutz", handler);
+  }, []);
 
   const currentYear = new Date().getFullYear();
 

@@ -3,11 +3,13 @@ import { Phone, Mail, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,6 +26,14 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!privacyAccepted) {
+      toast({
+        title: "Datenschutz erforderlich",
+        description: "Bitte stimmen Sie der Datenschutzerklärung zu, um das Formular abzusenden.",
+        variant: "destructive",
+      });
+      return;
+    }
     setIsSubmitting(true);
 
     try {
@@ -50,6 +60,7 @@ const Contact = () => {
           description: "Vielen Dank für Ihre Nachricht. Wir melden uns schnellstmöglich bei Ihnen.",
         });
         setFormData({ name: "", email: "", phone: "", message: "" });
+        setPrivacyAccepted(false);
       } else {
         toast({
           title: "Fehler",
@@ -151,11 +162,33 @@ const Contact = () => {
                   className="resize-none"
                 />
               </div>
+              <div className="flex items-start gap-3">
+                <Checkbox
+                  id="privacy"
+                  checked={privacyAccepted}
+                  onCheckedChange={(checked) => setPrivacyAccepted(checked === true)}
+                  className="mt-1"
+                />
+                <label
+                  htmlFor="privacy"
+                  className="text-sm text-muted-foreground leading-relaxed cursor-pointer"
+                >
+                  Ich habe die{" "}
+                  <button
+                    type="button"
+                    onClick={() => window.dispatchEvent(new CustomEvent("open-datenschutz"))}
+                    className="text-primary hover:underline font-medium"
+                  >
+                    Datenschutzerklärung
+                  </button>{" "}
+                  gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *
+                </label>
+              </div>
               <Button
                 type="submit"
                 size="lg"
                 className="w-full"
-                disabled={isSubmitting}
+                disabled={isSubmitting || !privacyAccepted}
               >
                 {isSubmitting ? (
                   "Wird gesendet..."
