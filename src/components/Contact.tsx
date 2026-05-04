@@ -60,6 +60,7 @@ const Contact = () => {
           description: "Vielen Dank für Ihre Nachricht. Wir melden uns schnellstmöglich bei Ihnen.",
         });
         setFormData({ name: "", email: "", phone: "", message: "" });
+        setPrivacyAccepted(false);
       } else {
         toast({
           title: "Fehler",
