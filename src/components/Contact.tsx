@@ -162,11 +162,33 @@ const Contact = () => {
                   className="resize-none"
                 />
               </div>
+              <div className="flex items-start gap-3">
+                <Checkbox
+                  id="privacy"
+                  checked={privacyAccepted}
+                  onCheckedChange={(checked) => setPrivacyAccepted(checked === true)}
+                  className="mt-1"
+                />
+                <label
+                  htmlFor="privacy"
+                  className="text-sm text-muted-foreground leading-relaxed cursor-pointer"
+                >
+                  Ich habe die{" "}
+                  <button
+                    type="button"
+                    onClick={() => window.dispatchEvent(new CustomEvent("open-datenschutz"))}
+                    className="text-primary hover:underline font-medium"
+                  >
+                    Datenschutzerklärung
+                  </button>{" "}
+                  gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *
+                </label>
+              </div>
               <Button
                 type="submit"
                 size="lg"
                 className="w-full"
-                disabled={isSubmitting}
+                disabled={isSubmitting || !privacyAccepted}
               >
                 {isSubmitting ? (
                   "Wird gesendet..."
