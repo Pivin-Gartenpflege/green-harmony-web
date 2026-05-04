@@ -26,6 +26,14 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!privacyAccepted) {
+      toast({
+        title: "Datenschutz erforderlich",
+        description: "Bitte stimmen Sie der Datenschutzerklärung zu, um das Formular abzusenden.",
+        variant: "destructive",
+      });
+      return;
+    }
     setIsSubmitting(true);
 
     try {
