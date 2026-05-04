@@ -147,78 +147,91 @@ const Footer = () => {
               <p>
                 Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br /><br />
                 Kevin Mierlita<br />
-                Pivin Garten- Landschaftspflege<br />
+                Pivin Garten- und Landschaftspflege<br />
                 Antoniusweg 9<br />
                 54576 Hillesheim<br /><br />
-                Telefon: 0160/93768260<br />
+                Telefon: 0160 93768260<br />
                 E-Mail: gartenpflege@pivin.de
               </p>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-2">2. Allgemeine Hinweise zur Datenverarbeitung</h4>
               <p>
-                Der Schutz Ihrer persönlichen Daten ist mir ein besonderes Anliegen.<br /><br />
-                Personenbezogene Daten werden auf dieser Website ausschließlich im Rahmen der gesetzlichen 
-                Bestimmungen der Datenschutz-Grundverordnung (DSGVO) verarbeitet.<br /><br />
-                Diese Datenschutzerklärung erläutert Art, Umfang und Zweck der Verarbeitung personenbezogener Daten.
+                Der Schutz Ihrer personenbezogenen Daten ist mir ein wichtiges Anliegen. Ihre Daten werden 
+                im Rahmen der gesetzlichen Vorschriften, insbesondere der Datenschutz-Grundverordnung (DSGVO), 
+                verarbeitet.<br /><br />
+                Diese Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung 
+                personenbezogener Daten auf dieser Website.
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-2">3. Domainregistrierung</h4>
+              <h4 className="font-bold text-foreground mb-2">3. Hosting und Content Delivery (GitHub Pages)</h4>
               <p>
-                Die Domain dieser Website ist registriert bei:<br /><br />
-                STRATO AG<br />
-                Otto-Ostrowski-Straße 7<br />
-                10249 Berlin<br />
-                Deutschland<br /><br />
-                STRATO verarbeitet im Rahmen der Domainverwaltung technische Daten, insbesondere zur 
-                Gewährleistung der Erreichbarkeit der Website.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-foreground mb-2">4. Hosting über GitHub Pages</h4>
-              <p>
-                Diese Website wird über den Dienst „GitHub Pages" bereitgestellt.<br /><br />
-                Anbieter:<br />
-                GitHub Inc.<br />
-                88 Colin P. Kelly Jr. Street<br />
-                San Francisco, CA 94107<br />
-                USA<br /><br />
-                Beim Aufruf der Website werden durch GitHub automatisch folgende Daten erhoben und in 
-                sogenannten Server-Logfiles gespeichert:
+                Diese Website wird über „GitHub Pages" bereitgestellt, einen Dienst der GitHub Inc., 
+                88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.<br /><br />
+                Beim Aufruf der Website werden durch GitHub automatisch Informationen erfasst und in 
+                sogenannten Server-Logfiles gespeichert. Dies sind insbesondere:
               </p>
               <ul className="list-disc list-inside mt-2 space-y-1">
                 <li>IP-Adresse</li>
-                <li>Datum und Uhrzeit des Zugriffs</li>
+                <li>Datum und Uhrzeit der Anfrage</li>
                 <li>aufgerufene Seite</li>
-                <li>Browsertyp und -version</li>
-                <li>verwendetes Betriebssystem</li>
+                <li>Browsertyp und Browserversion</li>
+                <li>Betriebssystem</li>
               </ul>
               <p className="mt-2">
-                Die Verarbeitung dieser Daten erfolgt zur technischen Bereitstellung und Sicherheit der Website.<br /><br />
-                GitHub kann Daten in die USA übertragen. GitHub stützt sich dabei auf die Standardvertragsklauseln 
-                der EU-Kommission gemäß Art. 46 DSGVO.<br /><br />
-                Weitere Informationen zum Datenschutz bei GitHub finden Sie in der Datenschutzerklärung von GitHub.
+                Die Verarbeitung erfolgt zur Sicherstellung eines störungsfreien Betriebs der Website sowie 
+                zur Gewährleistung der Systemsicherheit.<br /><br />
+                <strong className="text-foreground">Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO 
+                (berechtigtes Interesse an stabiler und sicherer Bereitstellung der Website)<br /><br />
+                GitHub kann personenbezogene Daten in die USA übertragen. Für diese Datenübermittlung werden 
+                sogenannte Standardvertragsklauseln der EU-Kommission verwendet.<br /><br />
+                <strong className="text-foreground">Hinweis:</strong> Es besteht das Risiko, dass US-Behörden 
+                auf personenbezogene Daten zugreifen können, ohne dass Ihnen hiergegen wirksame Rechtsbehelfe 
+                zur Verfügung stehen.<br /><br />
+                Weitere Informationen finden Sie in der Datenschutzerklärung von GitHub.<br /><br />
+                Mit GitHub wurde ein Vertrag zur Auftragsverarbeitung gemäß Art. 28 DSGVO abgeschlossen.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-foreground mb-2">4. Domainregistrierung und Hosting (STRATO)</h4>
+              <p>
+                Die Domain wird über den Anbieter STRATO AG, Otto-Ostrowski-Straße 7, 10249 Berlin, verwaltet.<br /><br />
+                STRATO verarbeitet technische Daten, die zur Bereitstellung und Aufrechterhaltung der 
+                Domainfunktion erforderlich sind.<br /><br />
+                <strong className="text-foreground">Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO<br /><br />
+                Mit STRATO wurde ein Vertrag zur Auftragsverarbeitung geschlossen.
               </p>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-2">5. Kontaktformular</h4>
               <p>
-                Wenn Sie mir per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular 
-                inklusive der angegebenen Kontaktdaten verarbeitet, um Ihre Anfrage zu bearbeiten.<br /><br />
-                Erhobene Daten können sein:
+                Wenn Sie mir über das Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem 
+                Formular zur Bearbeitung Ihrer Anfrage verarbeitet.<br /><br />
+                <strong className="text-foreground">Verarbeitete Daten:</strong>
               </p>
               <ul className="list-disc list-inside mt-2 space-y-1">
-                <li>Name</li>
-                <li>E-Mail-Adresse</li>
+                <li>Name (Pflichtfeld)</li>
+                <li>E-Mail-Adresse (Pflichtfeld)</li>
                 <li>Telefonnummer (optional)</li>
                 <li>Nachricht</li>
               </ul>
               <p className="mt-2">
-                Die Daten werden nicht ohne Ihre Einwilligung weitergegeben.<br /><br />
-                Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO.<br /><br />
-                Die Daten werden nach abschließender Bearbeitung gelöscht, sofern keine gesetzlichen 
-                Aufbewahrungspflichten bestehen.
+                <strong className="text-foreground">Zweck der Verarbeitung:</strong> Bearbeitung Ihrer Anfrage 
+                und Kontaktaufnahme<br /><br />
+                <strong className="text-foreground">Rechtsgrundlage:</strong>
+              </p>
+              <ul className="list-disc list-inside mt-2 space-y-1">
+                <li>Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen)</li>
+                <li>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an effizienter Kommunikation)</li>
+              </ul>
+              <p className="mt-2">
+                Die Angabe Ihrer Daten ist erforderlich, um Ihre Anfrage bearbeiten zu können. Ohne diese 
+                Angaben kann keine Bearbeitung erfolgen.<br /><br />
+                <strong className="text-foreground">Speicherdauer:</strong><br />
+                Ihre Daten werden gelöscht, sobald Ihre Anfrage abschließend bearbeitet wurde, spätestens 
+                jedoch nach 6 Monaten, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.<br /><br />
+                Eine Weitergabe der Daten erfolgt nicht ohne Ihre Einwilligung.
               </p>
             </div>
             <div>
@@ -226,25 +239,37 @@ const Footer = () => {
               <p>Diese Website verwendet keine Cookies.</p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-2">7. Ihre Rechte</h4>
-              <p>Sie haben jederzeit das Recht auf:</p>
-              <ul className="list-disc list-inside mt-2 space-y-1">
-                <li>Auskunft über Ihre gespeicherten Daten</li>
-                <li>Berichtigung unrichtiger Daten</li>
-                <li>Löschung Ihrer personenbezogenen Daten</li>
-                <li>Einschränkung der Verarbeitung</li>
-                <li>Widerspruch gegen die Verarbeitung</li>
-                <li>Datenübertragbarkeit</li>
-              </ul>
-              <p className="mt-2">
-                Außerdem steht Ihnen ein Beschwerderecht bei der zuständigen Datenschutzaufsichtsbehörde zu.
+              <h4 className="font-bold text-foreground mb-2">7. SSL- bzw. TLS-Verschlüsselung</h4>
+              <p>
+                Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. 
+                Eine verschlüsselte Verbindung erkennen Sie an „https://" in der Adresszeile Ihres Browsers.
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-2">8. SSL- bzw. TLS-Verschlüsselung</h4>
+              <h4 className="font-bold text-foreground mb-2">8. Ihre Rechte</h4>
+              <p>Sie haben folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:</p>
+              <ul className="list-disc list-inside mt-2 space-y-1">
+                <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+                <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+                <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+                <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+                <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+                <li>Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+              </ul>
+              <p className="mt-2">
+                Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen Datenschutzrecht verstößt, 
+                haben Sie das Recht, sich bei einer Aufsichtsbehörde zu beschweren.<br /><br />
+                <strong className="text-foreground">Zuständige Aufsichtsbehörde:</strong><br /><br />
+                Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz<br />
+                Hintere Bleiche 34<br />
+                55116 Mainz
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-foreground mb-2">9. Keine automatisierte Entscheidungsfindung</h4>
               <p>
-                Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung.<br /><br />
-                Eine verschlüsselte Verbindung erkennen Sie an „https://" in der Adresszeile Ihres Browsers.
+                Eine automatisierte Entscheidungsfindung einschließlich Profiling gemäß Art. 22 DSGVO 
+                findet nicht statt.
               </p>
             </div>
             <div className="pt-4 border-t border-border">
